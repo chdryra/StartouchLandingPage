@@ -1,0 +1,178 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.block-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.standard-padding {
+    padding: 2rem;
+}
+
+.screenshot {
+    max-width: 271px;
+    max-height: 482px;
+}
+
+.email-input-group {
+    width: 25rem;
+}
+
+.nav-container {
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    .brand-logo {
+        font-family: 'Rokkitt', serif;
+        font-size: 2rem;
+        color: $minor-primary-color;
+
+        &:visited,
+        &:active,
+        &:hover {
+            color: $minor-primary-color;
+        }
+    }
+
+
+    @include breakpoint(medium down) {
+        text-align: center;
+    }
+}
+
+.intro-container {
+    background-color: $major-color;
+    color: $white;
+    padding-bottom: 2rem;
+}
+
+.intro-content-container {
+    margin-top: 10rem;
+
+    @include breakpoint(medium down) {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    label {
+        color: $white;
+    }
+
+}
+
+.howitworks-container {
+    img {
+        margin-bottom: 2rem;
+    }
+
+    .columns {
+        @include breakpoint(medium down) {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.examples-container {
+    padding: 2rem 0;
+    background-color: $light-gray;
+
+    h4 {
+        margin-top: 2rem;
+    }
+
+    .columns {
+        @include breakpoint(medium down) {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+.founder-container {
+    background-color: $minor-primary-color;
+}
+
+.cta-container {
+    background-color: $minor-secondary-color;
+    color: $white;
+
+    label {
+        color: $white;
+    }
+
+    #mc_embed_signup {
+        margin-top: 3rem;
+        max-width: 40rem;
+    }
+}
+
+.footer-container {
+    background-color: $minor-secondary-color;
+    color: $white;
+
+    .sharethis-inline-share-buttons {
+        margin-bottom: 3rem;
+
+        span {
+            color: white;
+        }
+    }
+}
